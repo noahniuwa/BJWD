@@ -33,12 +33,9 @@ const Layout = ({ children }) => {
         </div>
         <div className={burgerMenuState}>
           <div className="navbar-start">
-            <div className="navbar-item">
-              <Link className="navbar-item" to={`/about/`}>
-                About
-              </Link>
-            </div>
-            
+            <Link className="navbar-item" to={`/about/`}>
+              About
+            </Link>
             <Link className="navbar-item" to={`/events/`}>
               Events
             </Link>

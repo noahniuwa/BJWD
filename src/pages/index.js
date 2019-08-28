@@ -5,6 +5,10 @@ import Img from "gatsby-image"
 
 
 export default ({ data }) => {
+  let now = Date()
+  let edges = data.allMarkdownRemark.edges.filter(edge => Date.parse(edge.node.frontmatter.date) > Date.parse(now))
+  //console.log(edges)
+  
   return (
     <Layout>
       <div className="hero">
@@ -24,13 +28,13 @@ export default ({ data }) => {
          
       <div className="section">
         <div className="notification is-danger">
-          <div className="title is-2 align-center">Events</div>
+          <div className="title is-2 align-center">Upcoming Events</div>
         </div>
       </div>
       <div className="hero">
         <div className="hero-body has-background-light">
           <div className="columns is-variable is-8 posts-container is-multiline">
-            {data.allMarkdownRemark.edges.map(({ node }) => (
+            {edges.map(({ node }) => (
               <div key= {node.id} className="column is-one-third card-container">
                 <div className="card" key={node.id}>
                   <Link to={node.fields.slug}>
