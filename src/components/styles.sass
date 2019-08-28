@@ -1,0 +1,54 @@
+@charset "utf-8"
+
+// If need, change your variables before importing Bulma
+//$title-color: #ff0000
+
+@import "~bulma/bulma.sass"
+
+//$card-header-background-color: #F5F5F5
+
+.center 
+	display: flex
+	justify-content: center
+	align-items: center
+
+.flex-dir-col
+  flex-direction: column
+
+.navbar-item img
+  max-height: 10rem
+  
+.nav-spacer 
+  height: 6rem
+
+.align-center
+  text-align: center
+
+.card-container
+  padding-left: 100px
+  padding-right: 100px
+
+.grid 
+	display: grid
+	grid-template-columns: [xl-start] 1fr 1.5rem [md-start] minmax(0, 624px) [md-end] 1.5rem 1fr [xl-end]
+
+.grid *  
+  grid-column: md
+
+.grid-xl 
+  grid-column: xl
+
+.event-image-box
+  width: 50%
+
+nav 
+  box-shadow: 0 1px 10px  gray
+
+.contactItem
+  font-weight: bold
+
+.notice
+  color: gray
+  font-style: italic
+  padding-left: 30%
+  padding-right: 30%
