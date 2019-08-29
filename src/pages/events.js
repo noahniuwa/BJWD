@@ -29,13 +29,12 @@ export default ({ data }) => (
                     <div className="card-header has-background-light">
                       <div className="card-header-title">
                         <p> 
-                          {node.frontmatter.title}{" "}
+                          Event title: {node.frontmatter.title}{" "} <br />
+                          Event date: {node.frontmatter.date}
                         </p>
                       </div>
                     </div>
-                    <p>
-                      <b>Event date: </b>{node.frontmatter.date}
-                    </p>
+                    
                     <p>{node.excerpt}</p>
                   </div>
                 </Link> 
