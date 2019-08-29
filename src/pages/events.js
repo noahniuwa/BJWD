@@ -8,7 +8,7 @@ export default ({ data }) => (
     <div className="hero">
       <div className="hero-content">
         <div className="section">
-          <div className="is-size-1 align-center">
+          <div className="is-size-2 align-center">
             Events
           </div>
         </div> 

@@ -6,17 +6,17 @@ export default ({ data }) => (
   <Layout>
     <div className="container grid">
       <div className="section is-paddingless-horizontal">
-        <h1 className="title is-2 has-text-black">
+        <h1 className="is-size-2 align-center">
           Contact 
         </h1>
-        
+      </div>
+      <div className="section has-background-light">
         <div className="card">
           <div className="card-content">
             <div className="content">
               <p><span className="contactItem">Wechat: </span>noahniuwa</p>
             </div>
           </div>
-        
         </div>
       </div>
     </div>

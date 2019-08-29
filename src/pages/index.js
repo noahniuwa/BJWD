@@ -15,10 +15,10 @@ export default ({ data }) => {
       <div className="hero">
         <div className="hero-content">
           <div className="section">
-            <div className="is-size-1 align-center">
+            <div className="is-size-2 align-center">
               Welcome to BJWD: 
             </div>
-            <div className="center is-size-3">
+            <div className="center is-size-4">
               <i>Beijing Web Developers Group</i>
             </div>
           </div> 
@@ -29,7 +29,7 @@ export default ({ data }) => {
          
       <div className="section grid-l">
         <div className="notification is-danger">
-          <div className="title is-2 align-center">Upcoming Events</div>
+          <div className="title is-3 align-center">Upcoming Events</div>
         </div>
       </div>
       <div className="hero grid-l">
