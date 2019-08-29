@@ -40,7 +40,9 @@ export default ({ data }) => {
                 <div className="card" key={node.id}>
                   <Link to={node.fields.slug}>
                     <div className="card-image">
-                      <Img fluid={node.frontmatter.featuredimage.childImageSharp.fluid} />
+                      <Img 
+                        fluid={node.frontmatter.featuredimage.childImageSharp.fluid}  
+                      />
                     </div>
                     <div className="card-content">
                       <div className="card-header has-background-light">
@@ -79,7 +81,7 @@ export const query = graphql`
             date(formatString: "DD MMMM, YYYY")
             featuredimage {
               childImageSharp {
-              fluid(maxWidth: 500, maxHeight: 250) {
+              fluid(maxWidth: 500, maxHeight: 300) {
                 ...GatsbyImageSharpFluid
               }
             }
