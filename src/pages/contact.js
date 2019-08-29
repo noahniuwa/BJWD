@@ -13,9 +13,7 @@ export default ({ data }) => (
         <div className="card">
           <div className="card-content">
             <div className="content">
-            <p><span className="contactItem">Phone: </span>888-8888-8888</p>
-            <p><span className="contactItem">Email: </span>888-8888-8888</p>
-
+              <p><span className="contactItem">Wechat: </span>noahniuwa</p>
             </div>
           </div>
         

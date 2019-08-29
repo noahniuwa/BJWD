@@ -16,10 +16,10 @@ export default ({ data }) => (
     </div>
         
     <div className="hero">
-      <div className="hero-body has-background-light">
+      <div className="hero-body grid-l has-background-light">
         <div className="columns is-variable is-8 posts-container is-multiline">
           {data.allMarkdownRemark.edges.map(({ node }) => (
-            <div key= {node.id} className="column is-one-quarter card-container">
+            <div key= {node.id} className="column is-half card-container">
               <div className="card" key={node.id}>
                 <Link to={node.fields.slug}>
                   <div className="card-image">
@@ -34,10 +34,7 @@ export default ({ data }) => (
                       </div>
                     </div>
                     <p>
-                      <b>Posted on: </b>{node.frontmatter.date}
-                    </p>
-                    <p>
-                      <b>Event date:</b>{node.frontmatter.event_date}
+                      <b>Event date: </b>{node.frontmatter.date}
                     </p>
                     <p>{node.excerpt}</p>
                   </div>
@@ -61,7 +58,6 @@ export const query = graphql`
           frontmatter {
             title
             date(formatString: "DD MMMM, YYYY")
-            event_date(formatString: "DD MMMM, YYYY")
             featuredimage {
               childImageSharp {
               fluid(maxWidth: 500, maxHeight: 250) {

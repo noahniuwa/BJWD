@@ -7,6 +7,7 @@ import Img from "gatsby-image"
 export default ({ data }) => {
   let now = Date()
   let edges = data.allMarkdownRemark.edges.filter(edge => Date.parse(edge.node.frontmatter.date) > Date.parse(now))
+  //let edges = data.allMarkdownRemark.edges.filter(edge => 1)
   //console.log(edges)
   
   return (
@@ -26,16 +27,16 @@ export default ({ data }) => {
         </div>
       </div>
          
-      <div className="section">
+      <div className="section grid-l">
         <div className="notification is-danger">
           <div className="title is-2 align-center">Upcoming Events</div>
         </div>
       </div>
-      <div className="hero">
+      <div className="hero grid-l">
         <div className="hero-body has-background-light">
           <div className="columns is-variable is-8 posts-container is-multiline">
             {edges.map(({ node }) => (
-              <div key= {node.id} className="column is-one-third card-container">
+              <div key= {node.id} className="column is-half card-container">
                 <div className="card" key={node.id}>
                   <Link to={node.fields.slug}>
                     <div className="card-image">
@@ -45,16 +46,12 @@ export default ({ data }) => {
                       <div className="card-header has-background-light">
                         <div className="card-header-title">
                           <p> 
-                            {node.frontmatter.title}{" "}
+                            Event title: {node.frontmatter.title}{" "} <br />
+                            Event date: {node.frontmatter.date}
                           </p>
                         </div>
                       </div>
-                      <p>
-                        <b>Posted on: </b>{node.frontmatter.date}
-                      </p>
-                      <p>
-                        <b>Event date:</b>{node.frontmatter.event_date}
-                      </p>
+                      <br />
                       <p>{node.excerpt}</p>
                     </div>
                   </Link> 
@@ -80,7 +77,6 @@ export const query = graphql`
           frontmatter {
             title
             date(formatString: "DD MMMM, YYYY")
-            event_date(formatString: "DD MMMM, YYYY")
             featuredimage {
               childImageSharp {
               fluid(maxWidth: 500, maxHeight: 250) {
