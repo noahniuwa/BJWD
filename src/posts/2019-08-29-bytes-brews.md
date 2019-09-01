@@ -1,6 +1,6 @@
 ---
 title: Bytes & Brews
-date: 2019-08-08T07:49:53.900Z
+date: 2019-08-08T11:00:00.000Z
 featuredimage: /static/img/wechatimg645.jpeg
 ---
 Bytes & Brews is an informal social / networking event where you can meet your fellow coders / web developers in Beijing! Grab a drink with some friendly folks after a long day of coding
