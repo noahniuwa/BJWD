@@ -35,7 +35,7 @@ export const query = graphql`
       html
       frontmatter {
         title
-        date(formatString: "DD MMMM, YYYY")
+        date(formatString: "DD MMMM, YYYY, h:mm a")
         featuredimage {
           childImageSharp {
           fluid(maxWidth: 1000, maxHeight: 600) {
