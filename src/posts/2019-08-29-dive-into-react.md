@@ -1,6 +1,6 @@
 ---
 title: Dive into React
-date: 2019-09-07T06:30:00.000Z
+date: 2019-09-07T14:30:00.000Z
 featuredimage: /static/img/meetup.jpg
 ---
 The Beijing Web Dev & Coders group is proud to present Dive into React, an interactive introduction to React. We will teach you the basics of how to use React, a modern front end framework developed by Facebook used for creating rich interactive web applications and interfaces. The session will be led by our community member and very experienced developer Kanwar.
