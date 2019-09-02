@@ -12,6 +12,8 @@ Please make sure to bring your laptop so you can follow along with the interacti
 **RSVP Here:** 
 https://www.eventbrite.com/e/dive-into-react-tickets-70734331289
 
+**Time:** 2:30 pm
+
 **Location and Dianping Link:**
 
 WeWork(隆福寺街95号),★★★☆,东四 商务楼,隆福寺街95号龙福文创园1号楼6层 http://m.dianping.com/appshare/shop/132045699
